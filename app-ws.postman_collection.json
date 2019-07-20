@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "1fe97447-70ab-4f9f-96e7-bf2142d17d79",
+		"name": "app-ws",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://Localhost:8080/users/0e66af1a-ca36-4ccd-9fa3-83db646cdc23",
+					"protocol": "http",
+					"host": [
+						"Localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"0e66af1a-ca36-4ccd-9fa3-83db646cdc23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Sergey\",\n    \"lastName\": \"Petrov\",\n    \"email\": \"yee@test.com\",\n    \"password\": \"12345678\"\n}"
+				},
+				"url": {
+					"raw": "http://Localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"Localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Sergey\",\n    \"lastName\": \"Petrov\"\n}"
+				},
+				"url": {
+					"raw": "http://Localhost:8080/users/0e66af1a-ca36-4ccd-9fa3-83db646cdc23",
+					"protocol": "http",
+					"host": [
+						"Localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"0e66af1a-ca36-4ccd-9fa3-83db646cdc23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://Localhost:8080/users/0e66af1a-ca36-4ccd-9fa3-83db646cdc23",
+					"protocol": "http",
+					"host": [
+						"Localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"0e66af1a-ca36-4ccd-9fa3-83db646cdc23"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
